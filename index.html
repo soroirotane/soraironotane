@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>特定非営利活動法人 空いろのたね</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f6fff2;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #9acd32;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #d9f2b4;
+      padding: 10px;
+    }
+    nav button {
+      background-color: #9acd32;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    nav button:hover {
+      background-color: #7caf1a;
+    }
+    .content {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .page {
+      display: none;
+    }
+    .page.active {
+      display: block;
+    }
+    h2 {
+      color: #9acd32;
+      border-left: 6px solid #9acd32;
+      padding-left: 10px;
+    }
+    .highlight {
+      background-color: #ffffcc;
+      font-weight: bold;
+      padding: 2px 4px;
+    }
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: #999;
+      padding: 20px;
+    }
+    ul.news-list {
+      list-style: none;
+      padding: 0;
+    }
+    ul.news-list li {
+      margin-bottom: 10px;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 6px;
+    }
+    .news-date {
+      font-weight: bold;
+      color: #666;
+    }
+    .facility-photo {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>特定非営利活動法人 空いろのたね</header>
+  <nav>
+    <button onclick="showPage('overview')">法人概要</button>
+    <button onclick="showPage('philosophy')">法人理念</button>
+    <button onclick="showPage('facilities')">事業所紹介</button>
+    <button onclick="showPage('news')">新着情報</button>
+    <button onclick="showPage('contact')">お問い合わせ</button>
+  </nav>
+  <div class="content">
+    <div id="overview" class="page active">
+      <h2>法人概要</h2>
+      <p><span class="highlight">法人名：</span> 特定非営利活動法人 空いろのたね</p>
+      <p><span class="highlight">所在地：</span> 千葉県四街道市旭ヶ丘4丁目15番7号</p>
+      <p><span class="highlight">設立：</span> 2018年1月16日</p>
+      <p><span class="highlight">代表者：</span> 真野千秋・夘沢明美</p>
+      <p>空いろのたねは、「地域の中で誰もが共に生きることのできる社会」を目指し、福祉・教育・就労支援などの多岐にわたる活動を展開しています。</p>
+      <p>地域住民との協働を大切にし、誰もがその人らしく、安心して暮らせる環境づくりに貢献します。</p>
+    </div>
+
+    <div id="philosophy" class="page">
+      <h2>法人理念</h2>
+      <p>この法人は、「皆が持ちつ持たれつ」の精神に基づいて、福祉・介護・就労などの支援活動を行い、福祉の谷間に埋もれたニーズへ寄り添い、年齢や障害の有無にかかわらず住み慣れた地域で暮らし続けられる“地域共生社会の実現”を目的とする。</p>
+      <h3>特定非営利活動の種類</h3>
+      <ul>
+        <li>(1) 保健、医療又は福祉の増進を図る活動</li>
+        <li>(2) 社会教育の推進を図る活動</li>
+        <li>(3) まちづくりの推進を図る活動</li>
+        <li>(4) 子どもの健全育成を図る活動</li>
+        <li>(5) 職業能力の開発又は雇用機会の拡充を支援する活動</li>
+      </ul>
+      <h4>事業内容</h4>
+      <ul>
+        <li>(1) 障害者総合支援法に基づく地域生活支援事業</li>
+        <li>(2) 障害者総合支援法に基づく障害福祉サービス事業</li>
+        <li>(3) 児童福祉法に基づく障害児通所支援事業</li>
+        <li>(4) 地域住民やボランティアとの協働を通じた地域づくり支援</li>
+        <li>(5) その他この法人の目的を達成するために必要な事業</li>
+      </ul>
+      <p>私たちは、多様性を尊重し合い、一人ひとりの力を引き出す支援を心がけています。</p>
+    </div>
+
+    <div id="facilities" class="page">
+      <h2>事業所紹介</h2>
+      <h3>放課後等デイサービス そらまめ</h3>
+      <img src="https://h-navi.jp/images/facility/161812_1.jpg" alt="そらまめ写真" class="facility-photo">
+      <p><span class="highlight">送迎あり</span>・〒284-0024 千葉県四街道市旭ヶ丘4-15-6</p>
+      <p>対象：小・中・高校生。障害種別：発達・身体・知的・重症心身対応</p>
+      <p>プログラム：感覚統合療法、運動療法、SST（ソーシャルスキルトレーニング）、学習支援、個別・集団療育</p>
+      <p><span class="highlight">支援へのこだわり</span>：①発達支援 ②移行支援 ③家族支援（保護者連携、就労継続支援）④地域定着支援</p>
+      <p>スタッフ：保育士・幼稚園教諭・児童指導員・介護福祉士による多職種チーム。外部研修も継続実施。</p>
+
+      <h3>多機能型事業所 まめの木</h3>
+       <p><span class="highlight">送迎あり</span>・〒284-0024 千葉県四街道市旭ヶ丘4-15-7</p>
+      <p>対象：。障害種別：発達・身体・知的・重症心身対応</p>
+      <p>仕事内容：畑仕事、弁当作り、地域新聞配布（委託）</p>
+      <p><span class="highlight">支援へのこだわり</span>：① ② ③家族支援（保護者連携）④地域定着支援</p>
+      <p>スタッフ：保育士・幼稚園教諭・児童指導員・介護福祉士による多職種チーム。外部研修も継続実施。</p>
+
+    </div>
+
+    <div id="news" class="page">
+      <h2>新着情報</h2>
+      <ul class="news-list">
+        <li><span class="news-date">2025/06/17</span> ホームページを始めました！！</li>
+        
+      </ul>
+    </div>
+
+    <div id="contact" class="page">
+      <h2>お問い合わせ</h2>
+      <p>ご質問や見学希望など、お気軽にご連絡ください。</p>
+      <p><span class="highlight">住所：</span> 千葉県四街道市旭ヶ丘4-15-7</p>
+      <p><span class="highlight">電話：</span> 070-3324-4202</p>
+      <p><span class="highlight">メール：</span> info@soraironotane.or.jp</p>
+      <p>受付時間：月曜～金曜 9:00～17:00（土日祝除く）</p>
+      <p>ご連絡いただいた内容には迅速に対応いたします。お気軽にどうぞ。</p>
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 特定非営利活動法人 空いろのたね
+  </footer>
+
+  <script>
+    function showPage(pageId) {
+      const pages = document.querySelectorAll('.page');
+      pages.forEach(p => p.classList.remove('active'));
+      document.getElementById(pageId).classList.add('active');
+    }
+  </script>
+</body>
+</html>
